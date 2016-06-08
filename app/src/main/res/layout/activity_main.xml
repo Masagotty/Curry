@@ -60,16 +60,26 @@
                 android:gravity="center">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:text="なまえ"
-                    android:id="@+id/nameTextView" />
+                    android:id="@+id/nameTextView"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:background="@color/accent_material_dark"
+                    android:layout_margin="1dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:text="たべもの"
-                    android:id="@+id/foodTextView" />
+                    android:id="@+id/foodTextView"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:background="@color/accent_material_dark"
+                    android:layout_margin="1dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -80,16 +90,27 @@
                 android:gravity="center">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:text="よそえました！"
-                    android:id="@+id/verbTextView" />
+                    android:id="@+id/verbTextView"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="30dp"
+                    android:background="@color/accent_material_dark"
+                    android:layout_margin="1dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="NEW BUTTON"
-                    android:onClick="serveFood" />
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="よそう！？"
+                    android:onClick="serveFood"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="30dp"
+                    android:id="@+id/button"
+                    android:background="@color/accent_material_light"
+                    android:layout_margin="1dp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

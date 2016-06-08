@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     String name;
     String[] people = {"まさご", "けんた", "Gotty", "ごてぃお"};
     String[] food = {"かれー", "みそしる", "ちゃーはん", "えびちり"};
+    String[] result = {"よそえました！", "どんまい"};
     TextView nameTextView;
     TextView foodTextView;
     TextView verbTextView;
@@ -35,11 +36,13 @@ public class MainActivity extends AppCompatActivity {
         Random randomFood = new Random();
         foodTextView.setText(food[randomFood.nextInt(4)] + "を");
 
+        verbTextView.setTextSize(30);
         Random random = new Random();
-        if(random.nextInt(100) < 50) {
-            verbTextView.setText("よそえました！");
+        if (random.nextInt(2) == 0 ) {
+            verbTextView.setTextSize(40);
+            verbTextView.setText(result[0]);
         } else {
-            verbTextView.setText("どんまい");
+            verbTextView.setText(result[1]);
         }
 
     }
